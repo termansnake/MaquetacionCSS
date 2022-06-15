@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0; 
+}
+a {
+    text-decoration: none;
+    /* forma horizontal */
+    display: inline;
+    color: black;
+}
+.grid-container {
+    max-width: 980px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+header .header-icons-container {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: #47cfac;
+}
+header .header-icons-container .icons {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;  
+}
+header .header-icons-container .icons img {
+    width: 28px;
+    height: 28px;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+nav .nav-logo-container {
+    margin-left: 50px;
+}
+nav .profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+nav .nav-logo-container img {
+    margin-top: 10px;
+    width: 220px;
+}
+nav .profile-link a {
+    color: black;
+    border-bottom: 1px solid black;
+}
+/* el contenedor main */
+.blogs-main {
+    display: grid;
+}
+.blogs-news-container {
+    background-color: #e6e9ed;
+    padding: 0 50px 40px;
+}
+.blogs-main-new {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+}
+.blogs-news-img-container {
+    grid-column: 1;
+}
+.blogs-news-img-container img {
+    width: 85%;
+    height: 90%;
+}
+.blogs-news-info-container {
+    grid-column: 2;
+}
+.blogs-news-info-container p {
+    margin-bottom: 35px;
+}
+.blogs-posts-container {
+ padding: 0 50px 10px;
+}
+.blogs-posts-container h3 {
+    border-bottom: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+.blogs-button {
+    border: 2px solid #47cfac;
+    padding: 10px 15px;
+    font-size: 12px;
+}
+.blogs-button:hover {
+	border: 1px solid white;
+	color: white;
+	background-color: #48CFAD;
+}
+.blogs-posts-container .post-container {
+    display: inline-block;
+    padding-left: 10px;
+    max-width: 30%;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+.blogs-posts-container .post-container p {
+    margin-bottom: 35px;
+}
+.blogs-posts-container .post-container img {
+    width: 100%;
+}
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: black ;
+    border-top: 35px solid #47cfac;
+}
+footer p {
+    color: white;
+    text-align: center;
+}
